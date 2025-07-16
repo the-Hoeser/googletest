@@ -1,7 +1,8 @@
 """Provides a fake @fuchsia_sdk implementation that's used when the real one isn't available.
 
 GoogleTest can be used with the [Fuchsia](https://fuchsia.dev/) SDK. However,
-because the Fuchsia SDK does not yet support bzlmod, GoogleTest's `MODULE.bazel`
+# because the Fuchsia SDK currently does not support bzlmod (Bazel Modules),
+, GoogleTest's `MODULE.bazel`
 file by default provides a "fake" Fuchsia SDK.
 
 To override this and use the real Fuchsia SDK, you can add the following to your
